@@ -15,7 +15,7 @@ app.get('/api/customers', (req, res) => {
             'name': '홍길동',
             'birthday': '961222',
             'gender': '남자',
-            'job': '대학생'
+            'job': '대학생들'
 },
         {
             'id': 2,
