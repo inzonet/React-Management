@@ -1,31 +1,34 @@
 import React from 'react';
+import TableRow from '@material-ui/core/TableRow';
+import TableCell from '@material-ui/core/TableCell';
+
 
 class Customer extends React.Component {
     render() {
         return ( <
-            div >
+            TableRow >
             <
-            CustomerProfile id = {
+            TableCell > {
                 this.props.id
-            }
-            image = {
+            } < /TableCell> <
+            TableCell > < img src = {
                 this.props.image
             }
-            name = {
+            alt = "profile" / > < /TableCell> <
+            TableCell > {
                 this.props.name
-            }
-            /> <
-            CustomerInfo birthday = {
+            } < /TableCell> <
+            TableCell > {
                 this.props.birthday
-            }
-            gender = {
+            } < /TableCell> <
+            TableCell > {
                 this.props.gender
-            }
-            job = {
+            } < /TableCell> <
+            TableCell > {
                 this.props.job
-            }
-            /> <
-            /div>
+            } < /TableCell> < /
+            TableRow >
+
         )
     }
 }
@@ -44,8 +47,8 @@ class CustomerProfile extends React.Component {
                 this.props.name
             }({
                 this.props.id
-            }) < /h2> <
-            /div>
+            }) < /h2> < /
+            div >
         )
     }
 }
@@ -63,8 +66,8 @@ class CustomerInfo extends React.Component {
             } < /p> <
             p > {
                 this.props.job
-            } < /p> <
-            /div>
+            } < /p> < /
+            div >
         )
     }
 }
